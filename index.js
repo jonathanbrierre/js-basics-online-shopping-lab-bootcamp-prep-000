@@ -32,7 +32,10 @@ function viewCart() {
         string = string +',';
       }
     }
-    console.log(string)
+    return(string)
+  }
+  else {
+    return('Your shopping cart is empty')
   }
 }
 

@@ -73,8 +73,9 @@ function removeFromCart(item) {
       if (cart[i]['itemName'] === item){
         cart.splice(i,1);
         var newCart = cart;
-        return newCart
+        return newCart;
       }
+      else if (cart[i]['itemName'] !== {
     }
   
 }

@@ -58,9 +58,9 @@ function removeFromCart(item) {
   // if (cart[i]['itemName'] === item){
     
   // }
-  // for(var i = 0; i < cart.length; i++){
-  //   if (cart[i]['itemName'] === item)
-  // }
+  for(var i = 0; i < cart.length; i++){
+    if (cart[i]['itemName'] === item)
+  }
 }
 
 function placeOrder(cardNumber) {

@@ -23,7 +23,7 @@ return `${item} has been added to your cart.`
 function viewCart() {
   
   if (0<cart.length) {
-    var string = 'In youf cart, you have'
+    var string = 'In your cart, you have'
     for(var i = 0; i < cart.length; i++){
       string = string + `${cart.i.itemName} at $${cart.i.itemPrice}`
       if (i === cart.length - 1){

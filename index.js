@@ -25,12 +25,12 @@ function viewCart() {
   if (0<cart.length) {
     var string = 'In your cart, you have';
     for(var i = 0; i < cart.length; i++){
-      string = string + ` ${cart[i]['itemName']} at $${cart[i]['itemPrice']}`;
+      // string = string + ` ${cart[i]['itemName']} at $${cart[i]['itemPrice']}`;
       if (i === cart.length - 1){
-        string = string + '.';
+        string = string + ` and ${cart[i]['itemName']} at $${cart[i]['itemPrice']}.`;
       }
       else {
-        string = string +',';
+        string = string + ` ${cart[i]['itemName']} at $${cart[i]['itemPrice']},`;
       }
     }
     return(string);

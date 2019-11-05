@@ -35,7 +35,7 @@ function viewCart() {
     return(string)
   }
   else {
-    return('Your shopping cart is empty')
+    return('Your shopping cart is empty.')
   }
 }
 

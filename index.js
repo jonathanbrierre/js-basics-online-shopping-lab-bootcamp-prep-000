@@ -66,4 +66,14 @@ function placeOrder(cardNumber) {
   if (cardNumber === undefined) {
     return "Sorry, we don't have a credit card on file for you."
   }
+  else if (cardNumber) {
+    var total = 0 
+    var i = 0 
+    while (i < cart.length){
+      total = total + cart[i]['itemPrice']
+      cart.splice(i,1)
+      i++
+    }
+    return `Your total cost is $${total}, which will be charged to the card ${cardNumber}.`
+  }
 }

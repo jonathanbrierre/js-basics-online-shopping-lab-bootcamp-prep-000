@@ -75,8 +75,12 @@ function removeFromCart(item) {
         var newCart = cart;
         return newCart;
       }
-      else if (cart[i]['itemName'] !== {
-    }
+      else if (cart[i]['itemName'] !== item && i < cart.length - 1){
+        i++
+      }
+      else {
+        return 'That item is not in your cart.'
+      }
   
 }
 

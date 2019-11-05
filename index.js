@@ -60,7 +60,7 @@ function removeFromCart(item) {
   // }
   for(var i = 0; i < cart.length; i++){
     if (cart[i]['itemName'] === item){
-      delete cart[i]
+      delete cart.delet_at_index()
     }
   }
 }

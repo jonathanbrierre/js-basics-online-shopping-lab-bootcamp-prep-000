@@ -64,11 +64,8 @@ function removeFromCart(item) {
       var newCart = cart;
       return newCart
     }
-    else {
-      return 'That item is not in your cart.'
-      
-    }
   }
+  
 }
 
 function placeOrder(cardNumber) {
